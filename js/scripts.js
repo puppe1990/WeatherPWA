@@ -1,8 +1,9 @@
 (function() {
+    //API: https://pokeapi.co/docsv2
     //define link de consumo à api
     //"id": 5346,
     //"name": "Porto Alegre",
-    const URL = 'http://cors.io/?u=https://apiadvisor.climatempo.com.br/api/v1/forecast/locale/3477/days/15?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
+    const URL = 'https://apiadvisor.climatempo.com.br/api/v1/forecast/locale/3477/days/15?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
     // const URL = 'js/dados.json';
     //instancia classe responsável ao consumo da api
     const xhr = new XMLHttpRequest();
@@ -86,7 +87,7 @@ function dadoRetorno(texto,max,min){
 
 function mudaCidade(cidade){
 
-    const URL = 'http://cors.io/?u=https://apiadvisor.climatempo.com.br/api/v1/forecast/locale/'+cidade+'/days/15?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
+    const URL = 'https://apiadvisor.climatempo.com.br/api/v1/forecast/locale/'+cidade+'/days/15?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
     console.log(cidade);
     // const URL = 'js/dados.json';
     //instancia classe responsável ao consumo da api
