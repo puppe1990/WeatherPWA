@@ -8,7 +8,6 @@ function mudaCidade(cidade){
 
     document.querySelector(".row") != null ? document.querySelector(".row").remove() : null
     const URL = 'https://apiadvisor.climatempo.com.br/api/v1/forecast/locale/'+cidade+'/days/15?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
-    const URLagora = 'http://apiadvisor.climatempo.com.br/api/v1/weather/locale/'+cidade+'/current?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
     console.log(URLagora);
     // const URL = 'js/dados.json';
     //instancia classe responsável ao consumo da api
@@ -30,7 +29,7 @@ function mudaCidade(cidade){
 function tempoAgora(cidade){
 
     document.querySelector(".row") != null ? document.querySelector(".row").remove() : null
-    const URLagora = 'http://apiadvisor.climatempo.com.br/api/v1/weather/locale/'+cidade+'/current?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
+    const URLagora = 'https://apiadvisor.climatempo.com.br/api/v1/weather/locale/'+cidade+'/current?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
     // console.log(URLagora);
     // const URL = 'js/dados.json';
     //instancia classe responsável ao consumo da api
