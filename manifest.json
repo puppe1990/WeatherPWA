@@ -1,0 +1,112 @@
+{
+    "dir": "ltr",
+    "lang": "pt",
+    "name": "Previsão do Tempo",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://previsaotempo.netlify.com/",
+    "short_name": "Previsao",
+    "theme_color": "transparent",
+    "description": "App de previsão do tempo",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/88745797-1475-3444-92a1-75d22fd6065d.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/897e4874-0562-2955-fecd-43886eedbd1f.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/9e2df206-64f6-13d9-3f9f-94a8579e257d.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/0369aa08-cd83-b585-5ee6-3eb42f2feded.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/debf74a4-6a54-f02a-2084-999d71fd0371.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/3a77de11-bc61-d067-17b8-37a78ab0be69.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/5489e06f-3f22-04a3-b1f8-6bec4268a0a5.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/077f87b7-772f-fb25-2dba-f4e16782c8a8.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/3419c1c5-05d5-cb55-74e8-997e6c247aaf.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/82f1a99f-665a-87d8-fd29-14ee3219ba36.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/66749e70-a0dd-972f-22ae-d39aba223a81.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/afd5d31b-8251-481e-3185-ef21b881831d.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/00976f62-f6c2-6e15-e11b-e3b1d28ad18e.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/eec47fde-7dee-8523-e0eb-e140211943b1.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/316da50f-2338-51f1-f4e4-f43dd870d700.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/f43f3a07-33e8-472d-9634-07210d1206db.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/0baf050c-5d8f-7fa9-6afd-d6c3d54841fd.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/d706a917-2977-9cc0-cfc5-f9d2c064f2bd.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/4a84daff-c440-0b7c-36a5-864c29ad7a9c.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ]
+}
