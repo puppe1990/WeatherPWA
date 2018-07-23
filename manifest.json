@@ -3,7 +3,7 @@
     "lang": "pt",
     "name": "Previsão do Tempo",
     "scope": "/",
-    "display": "browser",
+    "display": "fullscreen",
     "start_url": "https://previsaotempo.netlify.com/",
     "short_name": "Previsao",
     "theme_color": "transparent",
