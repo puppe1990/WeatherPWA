@@ -1,9 +1,15 @@
-(function() {
-    //API: https://pokeapi.co/docsv2
-    //define link de consumo à api
-    //"id": 5346,
-    //"name": "Porto Alegre",
-    const URL = 'https://apiadvisor.climatempo.com.br/api/v1/forecast/locale/3477/days/15?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
+
+function dadoRetorno(texto,max,min){
+   return document.createTextNode(texto + max + "C°-" + min + "C° ");
+}
+
+
+function mudaCidade(cidade){
+
+    document.querySelector(".row") != null ? document.querySelector(".row").remove() : null
+    const URL = 'https://apiadvisor.climatempo.com.br/api/v1/forecast/locale/'+cidade+'/days/15?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
+    console.log(URL);
+    console.log(cidade);
     // const URL = 'js/dados.json';
     //instancia classe responsável ao consumo da api
     const xhr = new XMLHttpRequest();
@@ -13,23 +19,23 @@
     xhr.send();
     //trata os dados de maneira assincrona 
     xhr.onload = function(e) {
-    //salva resposta da api em uma variavel
-    //e transforma resposta em um JSON válido
-    const res = JSON.parse(xhr.response);
-    // console.log(res);
-    // console.log(res);
-    construirQuadros(res);
+        //salva resposta da api em uma variavel
+        //e transforma resposta em um JSON válido
+        const res = JSON.parse(xhr.response);
+        console.log(res);
+        construirQuadros(res);
     }
-})();  
+}
 
 
-    function construirQuadros(dados){
-        //cria elemento pai de cada card de dado
-        let div = document.createElement('div');
-        //adiciona classe row do bootstrap na div
-        div.classList.add('row');
-        //itera em cada um dos dados
-        dados.data.map(dado => {
+
+function construirQuadros(dados){
+    //cria elemento pai de cada card de dado
+    let div = document.createElement('div');
+    //adiciona classe row do bootstrap na div
+    div.classList.add('row');
+    //itera em cada um dos dados
+    dados.data.map(dado => {
         //cria coluna do bootstrap
 
         const col = document.createElement('div');
@@ -77,31 +83,4 @@
     });
     //adiciona a div no elemento main
     document.querySelector('main').appendChild(div);
-
-}
-
-function dadoRetorno(texto,max,min){
-   return document.createTextNode(texto + max + "C°-" + min + "C° ");
-}
-
-
-function mudaCidade(cidade){
-
-    const URL = 'https://apiadvisor.climatempo.com.br/api/v1/forecast/locale/'+cidade+'/days/15?token=85d0b7516a7d9c2b89a0e3834cdaf37e';
-    console.log(cidade);
-    // const URL = 'js/dados.json';
-    //instancia classe responsável ao consumo da api
-    const xhr = new XMLHttpRequest();
-    //define opções da requisição
-    xhr.open('GET', URL, true);
-    //envia requisição para a api
-    xhr.send();
-    //trata os dados de maneira assincrona 
-    xhr.onload = function(e) {
-        //salva resposta da api em uma variavel
-        //e transforma resposta em um JSON válido
-        const res = JSON.parse(xhr.response);
-
-        construirQuadros(res);
-    }
-}
+}    
